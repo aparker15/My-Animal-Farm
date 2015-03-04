@@ -1,0 +1,57 @@
+World wref = new World();
+    ExampleTurtle ex1 = new ExampleSquirrel(wref);
+    ExampleTurtle ex2 = new ExampleSquirrel(0, 0, wref);
+    
+    /**
+   * Get the distance from the passed x and y location
+   * @param x the x location
+   * @param y the y location
+   * returns double
+   */
+    ex1.getDistance(100,100);
+    
+    /**
+   * Method to turn to face another simple turtle
+   */
+    ex1.turnToFace(ex2);
+    
+    
+   /**
+   * Method to turn towards the given x and y
+   * @param x the x to turn towards
+   * @param y the y to turn towards
+   */
+    ex1.turnToFace(10,10);
+    
+    /**
+   * Method to get value of show info 
+   * @return true if should show info, else false
+   * returns Boolean
+   */
+    ex1.getShowInfo();
+    
+    /**
+public class Squirrel extends Turtle
+{ 
+  /**
+   * Constructor that takes a model display and adds
+   * a turtle in the middle of it
+   * @param display the model display
+   */
+  public Squirrel(World wref)
+  {
+    super(wref);
+  }
+  
+  /**
+   * Constructor that takes the x and y position and the
+   * model displayer
+   * @param x the x pos
+   * @param y the y pos
+   * @param display the model display
+   */
+  public Squirrel (int x, int y, World wref)
+  {
+    super(x, y, wref);
+  }
+}
