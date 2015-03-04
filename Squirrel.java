@@ -1,3 +1,5 @@
+import java.awt.Color;
+
 public class Squirrel extends Turtle
 { 
   /**
@@ -8,6 +10,10 @@ public class Squirrel extends Turtle
   public Squirrel(World wref)
   {
     super(wref);
+   Color bodyColor = new Color(192, 192, 192); //requires import line at top to work (new color defined using RGB values)
+    this.setBodyColor(bodyColor);
+   Color shellColor = new Color(96, 96 , 96); //requires import line at top to work (new color defined using RGB values)
+    this.setShellColor(shellColor);
   }
   
   /**
