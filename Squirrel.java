@@ -39,4 +39,17 @@ public class Squirrel extends Turtle
     } catch(InterruptedException ex) {}
   }
   }
+
+public void animateTurn(int x)
+  {
+    for(int i = 0; i < 20; i++)
+    {
+      this.turn(x);
+    try
+    {
+      Thread.sleep(50);
+    } catch(InterruptedException ex) {}
+  }
+  }
 }
+

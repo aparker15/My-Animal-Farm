@@ -10,7 +10,7 @@ public class Farm
   bob.turnToFace(10,10);
   bob.backward(20); 
   bob.turnToFace(125,10);
-  bob.animate(100);
+  bob.animateTurn(100);
   bob.penUp();
   bob.getDistance(20,10);
   bob.getDistance(100,100);
@@ -23,6 +23,11 @@ public class Farm
   bob.penUp();
   bob.getDistance(20,10);
   bob.animate(10);
+  bob.backward(50);
+  bob.animateTurn(25);
+  bob.turnToFace(bob);
+  bob.forward(20);
+  bob.turnToFace(125,10);
   }
 
   }
