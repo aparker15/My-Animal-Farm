@@ -27,4 +27,16 @@ public class Squirrel extends Turtle
   {
     super(x, y, wref);
   }
+  
+  public void animate(int x)
+  {
+    for(int i = 0; i < 20; i++)
+    {
+      this.forward(x);
+    try
+    {
+      Thread.sleep(50);
+    } catch(InterruptedException ex) {}
+  }
+  }
 }
